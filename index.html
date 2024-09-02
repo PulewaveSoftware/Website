@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsewave Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loader"></div>
+
+    <!-- Main Content -->
+    <div id="content" class="hidden">
+        <header>
+            <h1>Pulsewave Software</h1>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <!-- EasyScript Project -->
+                <div class="project">
+                    <h3>EasyScript</h3>
+                    <p><strong>Brief:</strong> A beginner-friendly programming language.</p>
+                    <p><strong>Detailed:</strong> Write nerdy stuff.</p>
+                    <a href="https://github.com/PulewaveSoftware/EasiScript" target="_blank" class="btn">View on GitHub</a>
+                    <button class="btn" onclick="showVersions()">Versions</button>
+                    <div id="versions" class="hidden">
+                        <h4>Versions</h4>
+                        <ul>
+                            <li><a href="#" onclick="showVersionDetails('v1.0')">v1.0</a></li>
+                            <li><a href="#" onclick="showVersionDetails('v1.1')">v1.1</a></li>
+                        </ul>
+                    </div>
+                    <div id="version-details" class="hidden"></div>
+                </div>
+
+                <!-- EasyIDE Project -->
+                <div class="project">
+                    <h3>EasyIDE</h3>
+                    <p>EasyIDE is a versatile Integrated Development Environment designed to cater to different user needs. Here are the versions planned for release:</p>
+                    <ul>
+                        <li><strong>Free Versions:</strong>
+                            <ul>
+                                <li><strong>EasyIDE Student:</strong> Tailored for students with age-specific features, numerous examples, and simple commands.</li>
+                                <li><strong>EasyIDE Personal:</strong> General-purpose IDE for individual developers.</li>
+                                <li><strong>EasyIDE Enterprise:</strong> Suitable for small startup software companies with teams of 1-10 employees.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Paid Versions:</strong>
+                            <ul>
+                                <li><strong>EasyIDE Student:</strong> ₹50 (approx. $0.60). More default packages and themes.</li>
+                                <li><strong>EasyIDE Personal:</strong> ₹120 (approx. $1.50). Includes advanced features like enhanced error handling, syntax highlighting, and line completion.</li>
+                                <li><strong>EasyIDE Enterprise:</strong> ₹250 (approx. $3.00). Designed for larger companies with 50+ employees, offering more robust tools and support.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Pulsewave Software. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
