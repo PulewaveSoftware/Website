@@ -5,7 +5,6 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    overflow: hidden; /* Prevent scrolling during loading */
 }
 
 /* Loader Styling */
@@ -20,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    /* Initially display the loader */
 }
 
 #loader:after {
@@ -37,14 +37,26 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* Hidden Class */
-.hidden {
-    display: none;
-}
-
 /* Content Display */
 #content {
-    display: none;
+    display: block; /* Display content by default */
+}
+
+/* Hide Loader after a delay */
+@keyframes hideLoader {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#loader {
+    animation: hideLoader 1s forwards;
+    animation-delay: 3s; /* Adjust this delay based on how long you want the loader to display */
+    z-index: 1000; /* Ensure loader stays on top */
+}
+
+/* Hide Content Initially */
+#content {
+    display: block; /* Initially show content */
 }
 
 /* Header Styling */
