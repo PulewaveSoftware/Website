@@ -7,37 +7,7 @@ body {
     color: #333;
 }
 
-/* Loader Styling */
-#loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    /* Initially display the loader */
-}
 
-#loader:after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    border: 5px solid #fff;
-    border-top: 5px solid #333;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-/* Content Display */
 #content {
     display: block; /* Display content by default */
 }
