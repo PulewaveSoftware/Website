@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulsewave Software</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Loading Animation -->
-    <div id="loader"></div>
 
     <!-- Main Content -->
-    <div id="content" class="hidden">
+    <div id="content">
         <header>
             <h1>Pulsewave Software</h1>
             <nav>
@@ -31,7 +29,15 @@
                     <p><strong>Brief:</strong> A beginner-friendly programming language.</p>
                     <p><strong>Detailed:</strong> Write nerdy stuff.</p>
                     <a href="https://github.com/PulsewaveSoftware/EasiScript" target="_blank" class="btn">View on GitHub</a>
-                    <!-- Versions section removed as it required JavaScript -->
+                    <button class="btn" onclick="showVersions()">Versions</button>
+                    <div id="versions" class="hidden">
+                        <h4>Versions</h4>
+                        <ul>
+                            <li><a href="#" onclick="showVersionDetails('v1.0')">v1.0</a></li>
+                            <li><a href="#" onclick="showVersionDetails('v1.1')">v1.1</a></li>
+                        </ul>
+                    </div>
+                    <div id="version-details" class="hidden"></div>
                 </div>
 
                 <!-- EasyIDE Project -->
@@ -62,5 +68,6 @@
             <p>&copy; 2024 Pulsewave Software. All rights reserved.</p>
         </footer>
     </div>
+
 </body>
 </html>
