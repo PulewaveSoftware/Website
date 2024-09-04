@@ -22,7 +22,7 @@ This repository contains the following:
 - **`index.html`**: The main landing page for the website.
 - **`styles.css`**: The main stylesheet for the website.
 - **`script.js`**: JavaScript functions used across the site.
-- **`assets/`**: Folder containing images, icons, and other assets used on the website.
+
 
 ## Contribution
 
