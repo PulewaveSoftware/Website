@@ -7,28 +7,6 @@ body {
     color: #333;
 }
 
-
-#content {
-    display: block; /* Display content by default */
-}
-
-/* Hide Loader after a delay */
-@keyframes hideLoader {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-#loader {
-    animation: hideLoader 1s forwards;
-    animation-delay: 3s; /* Adjust this delay based on how long you want the loader to display */
-    z-index: 1000; /* Ensure loader stays on top */
-}
-
-/* Hide Content Initially */
-#content {
-    display: block; /* Initially show content */
-}
-
 /* Header Styling */
 header {
     background-color: #333;
