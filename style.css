@@ -44,7 +44,7 @@ main {
     padding: 20px;
 }
 
-/* Projects Section */
+/* Section Headings */
 h2 {
     color: #333;
     text-align: center;
@@ -94,8 +94,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px 0;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
