@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulsewave Software - EasiScript</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div id="loading">Loading...</div>
 
     <!-- Main Content -->
-    <div id="content">
+    <div id="content" class="hidden">
         <header>
             <h1>Pulsewave Software</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About EasiScript</a></li>
                     <li><a href="#features">Features</a></li>
+                    <li><a href="#commands">Commands</a></li>
                     <li><a href="#versions">Versions</a></li>
                 </ul>
             </nav>
@@ -34,6 +37,38 @@
                     <li>Comprehensive Libraries: Access to powerful libraries for various tasks.</li>
                     <li>Cross-Platform Compatibility: Works seamlessly on multiple platforms.</li>
                     <li>Built-in Debugger: Tools to help identify and fix errors easily.</li>
+                </ul>
+            </section>
+
+            <section id="commands">
+                <h2>Supported Commands</h2>
+                <p>EasiScript currently supports 150 commands, covering a wide range of programming functionalities. Below is the complete list:</p>
+                <ul>
+                    <li>PRINT, DISPLAY, SAY, SHOW</li>
+                    <li>SET, ASSIGN, SUM, ADD, SUBTRACT</li>
+                    <li>TIMES, MULTIPLY, DIVIDE, MOD</li>
+                    <li>INCREMENT, DECREMENT, AND, OR, NOT</li>
+                    <li>EQUAL, GREATER, LESS, GREATER_OR_EQUAL, LESS_OR_EQUAL</li>
+                    <li>IF, ELSE, ELIF, ENDIF, SWITCH, CASE, DEFAULT, ENDCASE</li>
+                    <li>WHILE, FOR, LOOP, DO, UNTIL, BREAK, CONTINUE</li>
+                    <li>FUNCTION, ENDFUNCTION, RETURN, CALL, DEF</li>
+                    <li>LIST, APPEND, INSERT, REMOVE, POP, SLICE</li>
+                    <li>LENGTH, INDEX, SORT, REVERSE, DICT</li>
+                    <li>SET_KEY, GET_KEY, REMOVE_KEY, HAS_KEY, KEYS, VALUES, ITEMS</li>
+                    <li>OPEN, READ, WRITE, CLOSE, DELETE, RENAME</li>
+                    <li>EXISTS, INPUT, OUTPUT, READLINE, WRITELINE</li>
+                    <li>CLEAR, TRY, EXCEPT, FINALLY, RAISE, ASSERT</li>
+                    <li>SQRT, POW, ABS, MIN, MAX, ROUND, CEIL, FLOOR</li>
+                    <li>RANDOM, CONCAT, SPLIT, REPLACE, SUBSTRING</li>
+                    <li>UPPER, LOWER, STRIP, STARTSWITH, ENDSWITH</li>
+                    <li>NOW, TODAY, TIMESTAMP, FORMAT_DATE, PARSE_DATE</li>
+                    <li>SLEEP, EXECUTE, RUN, SHELL, EXIT, CLEAR_SCREEN</li>
+                    <li>PAUSE, DEBUG, LOG, TRACE, INSPECT, PROFILE</li>
+                    <li>CONNECT, DISCONNECT, SEND, RECEIVE, PING</li>
+                    <li>THREAD, LOCK, UNLOCK, SIGNAL, WAIT, NOTIFY</li>
+                    <li>DRAW, RENDER, UPDATE, PLAY, STOP, VOLUME, MUTE</li>
+                    <li>UNMUTE, RECORD, STOP_RECORDING, SAVE, LOAD</li>
+                    <li>EXPORT, IMPORT, COMPRESS, FIND, REPLACE</li>
                 </ul>
             </section>
 
@@ -58,6 +93,5 @@
             <p>&copy; 2024 Pulsewave Software. All rights reserved.</p>
         </footer>
     </div>
-
 </body>
 </html>
